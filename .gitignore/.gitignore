@@ -1,1 +1,21 @@
-vv
+#include<stdio.h>
+#define constant1 1
+int main(void)
+{
+	double d1, d2, d3, d4, a, b, ans;
+	printf("enter the type of caculation:+ for 1 ");
+	scanf("%lf",&d1);
+	printf("enter the type of caculation:- for 1 ");
+	scanf("%lf",&d2);
+	printf("enter the type of caculation:* for 1 ");
+	scanf("%lf",&d3);
+	printf("enter the type of caculation:/ for 1 ");
+	scanf("%lf",&d4);
+	printf("enter the first number");
+	scanf("%lf",&a);
+	printf("enter the second number");
+	scanf("%lf",&b);
+	ans = d1 * a + d1 *b + d2 * a - d2 * b + d3 * a * d3 * b + ( d4 * a ) / ( constant1 * b );
+	printf("the resule of %f and %f is %f.\n", a, b, ans);
+	return(0);
+}
