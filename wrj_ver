@@ -1,0 +1,12 @@
+int main <void>
+{
+
+    long a,b,c;
+    printf("input a=");
+    scanf(%ld,&a);
+    printf("input b=");
+    scanf(%ld,&b);
+    c=a*b;
+    printf("%ld\n",c);
+    retuen (0);
+}
