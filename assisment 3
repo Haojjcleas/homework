@@ -1,0 +1,11 @@
+#includ <stdio.h>
+#define pi =  3.14159265
+int main (void)
+{
+	double R=0, area=0;
+	printf("Enter the radius of the circle \n")
+	scanf("%lf",&R);
+	area = R * pi
+	printf("the area of the vircle is %f")
+	return (0)
+}
