@@ -1,12 +1,15 @@
 #include <stdio.h>
 int main (void)
 {
-	long first_number, second_number, ans ;
+	double first_number = 0, second_number = 1;
+	int ans = 0 ,a ,b;
 	printf("Enter the first number : \n ");
-	scanf("%ld",&first_number);
+	scanf("%lf",&first_number);
 	printf("Enter the secone number: \n ");
-	scanf("%ld", &second_number);
-	ans = first_number * second_number ;
-	printf("%ld * %ld = %ld \n", first_number, second_number, ans);
+	scanf("%lf", &second_number);
+	ans = (int) first_number * (int) second_number ;
+	a = (int) first_number;
+	b = (int) second_number;
+	printf("%d * %d = %d \n", a, b, ans);
 	return (0);
 }
