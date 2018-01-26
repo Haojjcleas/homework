@@ -1,0 +1,27 @@
+#include <stdio.h>
+#define USD_rate 0.12503  
+#define HKD_rate 0.96946  
+#define RMB_rate 0.83502 
+#define Euro_rate 0.09225
+
+double linar (double a,double b,double x )
+{
+	double  y;
+	y = a * x + b ;
+return ( y );
+}
+
+int main(void)
+{
+	double USD, HKD, RMB, Euro, MOP;
+	printf("Enter amount in MOP: ");
+	scanf("%lf",&MOP);
+	USD = linar(USD_rate, 0, MOP);
+	HKD = linar(HKD_rate, 0, MOP);
+	RMB = linar(RMB_rate, 0, MOP);
+	Euro = linar(Euro_rate, 0, MOP);
+
+	printf("%.2f MOP is equivalent to : \n  ",MOP);
+	printf("\n USD %8.2f \n HKD %8.2f \n RMB %8.2f \n Euro %7.2f \n",USD, HKD, RMB, Euro);
+return (0);
+}
